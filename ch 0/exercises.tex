@@ -17,6 +17,7 @@ a) The set of all odd natural numbers.
 \\d) The set of all natural numbers divisible by 2 and 3.
 \\e) The set of all strings of 0s and 1s that are palindromic.
 \\f) An empty set.
+
 \section{Exercise 0.2}
 a) $\{ n | n = 10^m$ for some $m\in \mathbb N\}$
 \\b) $\{ n\in \mathbb Z | n > 5\}$
@@ -24,6 +25,7 @@ a) $\{ n | n = 10^m$ for some $m\in \mathbb N\}$
 \\d) $\{$aba$\}$
 \\e) $\{\epsilon\}$
 \\f) $\emptyset$
+
 \section{Exercise 0.3}
 a) $A$ is not a subset of $B$.
 \\b) $B$ is a subset of $A$.
@@ -31,22 +33,41 @@ a) $A$ is not a subset of $B$.
 \\d) $A \cap B = \{$x, y$\}$
 \\e) $A \times B = \{($x, x$), ($x, y$), ($y, x$), ($y, y$), ($z, x$), ($z, y$)\}$
 \\f) $\mathcal{P}(B) = \{\emptyset, \{$x$\}, \{$y$\}, B\}$
+
 \section{Exercise 0.4}
 The Cartesian product of $n$ sets is the set of all $n$-tuples where the first element is an element of the first operand, the second element is an element of the second operand, and so on. In the case of $A \times B$, the first element of each 2-tuple is an element of A, and the second element of each 2-tuple is an element of B. So, if $A$ has $a$ elements and $B$ has $b$ elements, to make every possible pair, you would need $a$ elements $b$ times, or $a * b$ pairs. Similarly, if $A$ has $a$ elements, $B$ has $b$ elements, and $C$ has $c$ elements, $A \times B \times C$ has $a * b * c$ elements.
+
 \section{Exercise 0.5}
 Each element of $\mathcal{P}(C)$ is a subset of $C$, meaning each element of $\mathcal{P}(C)$ is a permutation where each element of $C$ is either present or not present (2 possibilities per element). Thus, if $C$ is a set with $c$ elements, there are $2^c$ elements in $\mathcal{P}(C)$.
+
 \section{Exercise 0.6}
 a) $f(2) = 7$
 \\b) $f:[1, 5] \rightarrow \{6, 7\}$
 \\c) $g(2, 10) = 6$
 \\d) $g:[1, 5] \times [6, 10] \rightarrow [6, 10]$
 \\e) $g(4, f(4)) = g(4, 7) = 8$
+
 \section{Exercise 0.7}
-a)
-\\b)
-\\c)
+Let $A = \{1, 2, 3\}$.
+\\a) $R_a = \{(1, 1), (2, 2), (3, 3), (1, 2), (2, 1), (2, 3), (3, 2)\}$
+\\$R_a$ is reflexive because $\forall x\in A (x R_a x)$,
+$R_a$ is symmetric because $\forall x\in A (x R_a y \rightarrow y R_a x)$,
+and $R_a$ is not transitive because $\exists x\in A ((x R_a y \wedge y R_a z) \wedge \neg(x R_a z))$
+\\b) $R_b = \{(1, 1), (2, 2), (3, 3), (1, 2), (2, 3), (1, 3)\}$
+\\$R_b$ is reflexive because $\forall x\in A (x R_b x)$,
+$R_b$ is transitive because $\forall x\in A ((x R_b y \wedge y R_b z) \rightarrow x R_b z)$,
+and $R_b$ is not symmetric because $\exists x\in A (x R_b y \wedge \neg(y R_b x))$
+\\c) $R_c = \{(1, 2), (2, 1), (1, 3), (3, 1), (2, 3), (3, 2)\}$
+\\$R_c$ is symmetric because $\forall x\in A (x R_c y \rightarrow y R_c x)$,
+$R_c$ is transitive because $\forall x\in A ((x R_c y \wedge y R_c z) \rightarrow x R_c z)$,
+and $R_c$ is not reflexive because $\exists x\in A \neg(x R_c x)$
+
 \section{Exercise 0.8}
+Hey Alexa how to use tikz-automata
+
 \section{Exercise 0.9}
+$(\{1, 2, 3, 4, 5, 6\}, \{(1, 4), (1, 5), (1, 6), (2, 4), (2, 5), (2, 6), (3, 4), (3, 5), (3, 6)\})$
+
 % \begin{align*}
 % \end{align*}
 
