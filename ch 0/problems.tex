@@ -14,23 +14,29 @@
 You cannot divide either side of the equation by $(a - b)$ because you assume $a = b$, meaning $a - b = 0$.
 
 \section{Problem 0.11}
+% what if you wanted to go to heaven but then god said underfull \hbox (badness 10000)
 a) \textbf{Proof:} \textit{Basis:} Let $n = 1$. Then, $S(1) = 1$ and $\frac{1}{2}(1)(1 + 1) = 1$, which means $S(n) = \frac{1}{2}n(n+1)$ is true for $n = 1$.
 \\\textit{Induction step:} Assume n is an arbitrary but fixed natural number such that $1 + 2 + ... + n = \frac{1}{2}n(n+1)$.
 Then, $1 + 2 + ... + n + (n + 1) = \frac{1}{2}n(n+1) + (n + 1) = \frac{1}{2}n^2 + \frac{3}{2}n + 1 = \frac{1}{2}(n^2 + 3n + 2) = \frac{1}{2}(n + 1)((n + 1) + 1)$.
 Since $1 + 2 + ... + n + (n + 1) = \frac{1}{2}(n + 1)((n + 1) + 1)$, $1 + 2 + ... + n = \frac{1}{2}n(n+1)$ is true for $n + 1$.
 Thus, $S(n) = \frac{1}{2}n(n+1)$ for all natural numbers. Q.E.D.
-\newline b) \textbf{Proof:} \textit{Basis:} Let $n = 1$. Then, $C(1) = 1$ and $\frac{1}{4}(1)^2(1 + 1)^2 = 1$, which means $C(n) = \frac{1}{4}n^2(n + 1)^2$ is true for $n = 1$.
+\newline\\ b) \textbf{Proof:} \textit{Basis:} Let $n = 1$. Then, $C(1) = 1$ and $\frac{1}{4}(1)^2(1 + 1)^2 = 1$, which means $C(n) = \frac{1}{4}n^2(n + 1)^2$ is true for $n = 1$.
 \\\textit{Induction step:} Assume n is an arbitrary but fixed natural number such that $1^3 + 2^3 + ... + n^3 = \frac{1}{4}n^2(n+1)^2$.
 Then, $1^3 + 2^3 + ... + n^3 + (n + 1)^3 = \frac{1}{4}n^2(n+1)^2 + (n + 1)^3 = (n + 1)^2(\frac{1}{4}n^2 + (n + 1)) = \frac{1}{4}(n + 1)^2(n^2 + 4n + 4) = \frac{1}{4}(n + 1)^2((n + 1) + 1)$.
 Since $1^3 + 2^3 + ... + n^3 + (n + 1)^3 = \frac{1}{4}(n + 1)^2((n + 1) + 1)$, $1^3 + 2^3 + ... + n^3 = \frac{1}{4}n^2(n+1)^2$ is true for $n + 1$.
 Thus, $C(n) = \frac{1}{4}n^2(n + 1)^2$ for all natural numbers. Q.E.D.
-\newline \textbf{Conclusion:} Because $C(n) = \frac{1}{4}n^2(n + 1)^2$ and $S(n) = \frac{1}{2}n(n+1)$ for all natural numbers, $C(n) = S^2(n)$ for all natural numbers.
+\newline\\ \textbf{Conclusion:} Because $C(n) = \frac{1}{4}n^2(n + 1)^2$ and $S(n) = \frac{1}{2}n(n+1)$ for all natural numbers, $C(n) = S^2(n)$ for all natural numbers.
 \section{Problem 0.12}
-
+You cannot conclude that all the horses in $H_2$ are the same color because
+the initially removed horse may be a different color than those in $H_1$ with $k$ horses. This means that replacing that removed horse and then removing an alternative one may mean $H_2$ has one differently-colored horse.
 \section{Problem 0.13}
-
+\textbf{Proof:} \textit{Basis:} Let graph $F$ contain only nodes $a$ and $b$. Then, both nodes clearly have equal degrees.
+\\\textit{Induction step:} Assume $k$ is an arbitrary but fixed natural number greater than $2$, that graph $G$ contains $k$ nodes, and that there exists two nodes contained in $G$, which we'll also call $a$ and $b$, that both have $n$ degrees (i.e. equal degrees).
+Now say we add an additional node $c$ to graph $G$ by adding a vertex from $a$ to $c$ and a vertex from $b$ to $c$. Then, node $a$ and node $b$ both have $n + 1$ degrees, which means our new graph of $k + 1$ nodes still contains two nodes with equal degrees.
+Thus, we can conclude that every graph with two or more nodes contains two nodes with equal degrees.
 \section{Problem 0.14}
-
+\textbf{Proof:} \textit{Basis:} Let graph $F$ contain $n = 1$ nodes. Then, it can be said that $F$ itself is vacuously a clique or anti-clique.
+Since $F$ has 1 node, and $\frac{1}{2}\log_{2} 1$ = 0, $F$ 
 \section{Problem 0.15}
 
 \end{document}
